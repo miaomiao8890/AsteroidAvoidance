@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Asteroid Avodance Game</title>
+	<link rel="stylesheet" href="css/game.css" type="text/css">
+</head>
+<body>
+	<div id="game">
+		<div id="gameUI">
+			<div id="gameIntro">
+				<h1>Asteroid avoidance</h1>
+				<p>Click play and then press any key to start.</p>
+				<p><a href="" id="gamePlay" class="button">Play</a></p>
+			</div>
+			<div id="gameStats">
+				<p>Time: <span class="gameScore"></span>seconds</p>
+				<p><a href="" class="gameReset">Reset</a></p>
+			</div>
+			<div id="gameComplete">
+				<h1>Game over!</h1>
+				<p>You survived for <span class="gameScore"></span>seconds.</p>
+				<p><a href="" class="gameReset button">Play again</a></p>
+			</div>
+		</div>
+		<canvas id="gameCanvas" width="800" height="600">
+			<audio id="gameSoundBackground" loop>
+				<source src="sounds/background.ogg">
+				<source src="sounds/background.mp3">
+			</audio>
+			<audio id="gameSoundThrust" loop>
+				<source src="sounds/thrust.ogg">
+				<source src="sounds/thrust.mp3">
+			</audio>
+			<audio id="gameSoundDeath" loop>
+				<source src="sounds/death.ogg">
+				<source src="sounds/death.mp3">
+			</audio>
+		</canvas>
+	</div>
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+</body>
+</html>
